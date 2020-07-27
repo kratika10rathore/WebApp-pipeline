@@ -1,0 +1,15 @@
+- name: ec2-launcher
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: create ec2
+      ec2 :
+        instance_type: t2.micro
+        key_name: Devops_Project
+        image:  ami-016b213e65284e9c9
+        region: us-east-2
+        group: Devops_Project_SG
+        count: 1
+        vpc_subnet_id: subnet-51a1c01d
+        wait: yes
+        assign_public_ip: yes
