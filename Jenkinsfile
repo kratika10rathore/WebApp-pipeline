@@ -1,7 +1,6 @@
 node {
     try{
-  //  currentBuild.result = 'SUCCESS'
-    stage('Git Checkout'){
+     stage('Git Checkout'){
         git credentialsId: 'github', url: 'https://github.com/kratika10rathore/WebApp-pipeline.git'
         
     }
@@ -53,8 +52,7 @@ node {
         sh 'which ansible'
         sh 'ansible --version'
           ansiblePlaybook  credentialsId: 'aws-pem', installation: 'Ansible', playbook: 'aws-ec2-playbook.yml'
-        // ansiblePlaybook becomeUser: 'rathore_kratika109', credentialsId: 'aws-pem', installation: 'Ansible', playbook: //'aws-pem-playbook.yml', sudo: true, sudoUser: 'rathore_kratika109'
-   }
+     }
    stage("Wait to EC2 instance coming up"){
        sh 'sleep 40'
    }
@@ -99,8 +97,8 @@ node {
     
     catch(e){
              currentBuild.result = 'FAILURE'
-             emailext attachLog: true, body: 'Attaching the logs for failure.', replyTo: 'rathore.kratika109@gmail.com', to: 'kratirathore104@gmail.com'
-           //  mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "BROKEN BUILD CI: Project name -> ${env.JOB_NAME}", to: "rathore.kratika109@gmail.com";  
+             emailext attachLog: true, body: 'Attaching the logs for failure.', subject: 'subject: \'Build failed in Jenkins: $PROJECT_NAME - #$BUILD_NUMBER\'', replyTo: 'rathore.kratika109@gmail.com', to: 'kratirathore104@gmail.com'
+            
          }  
          finally {  
              echo 'This will run only if the run was marked finally'
