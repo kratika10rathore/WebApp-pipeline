@@ -13,7 +13,7 @@ node {
      def scannerHome = tool 'SonarQube Scanner';
        withSonarQubeEnv('sonarqube-6.4')  { 
        sh "${scannerHome}/bin/sonar-scanner   \
-       -Dsonar.host.url=http:\\35.240.172.247:9000 \
+       -Dsonar.host.url=http:\\35.247.184.143:9000 \
        -Dsonar.login=2ce4e6ef2d679007972d722311f12adfb10564a5 \
        -Dsonar.projectVersion=1.0.0 \
        -Dsonar.projectKey=WebAppKey \
@@ -57,7 +57,7 @@ node {
        sh 'sleep 40'
    }
    stage("Getting Ip of EC2 Instance"){
-      def command = 'aws ec2 describe-instances --query "Reservations[*].Instances[*].PublicIpAddress[]"'
+      def command = 'aws ec2 describe-instances --filter "Name=tag-key,Values=Name" "Name=tag-value,Values=WebApp" --query "Reservations[*].Instances[*].PublicIpAddress[]"'
       def result = sh script: "${command}" , returnStdout:true
       def VmIp = result.split('"')
       ipAddress= VmIp[1]
