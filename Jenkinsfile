@@ -1,7 +1,7 @@
 node {
     try{
      stage('Git Checkout'){
-        git credentialsId: 'github', url: 'https://github.com/kratika10rathore/WebApp-pipeline.git'
+        git credentialsId: 'gthub', url: 'https://github.com/kratika10rathore/WebApp-pipeline.git'
         
     }
      stage('Code Build & Test'){
