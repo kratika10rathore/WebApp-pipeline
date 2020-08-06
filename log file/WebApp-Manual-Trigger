@@ -1,0 +1,570 @@
+Started by user [8mha:////4D06e1nGorqG588owkpqLxRK1r0NPKJW7j6piTWSWJjrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZe/dLi1CL97KLEkszsRADalXI5wgAAAA==[0mKratika Rathore
+Obtained Jenkinsfile from git https://github.com/kratika10rathore/WebApp-pipeline.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4C4yK8ORPBh0NWPAhX04p3M13ofhnKu+2/+8eYTs5xomAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4G2xcdIlya6ei52gYk5qY7rKUuDuwtWCLmp6sVEVdi1iAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4MS5Tqz2T8nUjeHBewM+TUnV+q2MlIgys3+y9eHIjAsgAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp
+[8mha:////4FHX/v+H+4Y5B7bLcpVUsQa/YZxnTkAuBlyQ1mQRwh7yAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4B6/BzkFGJwkGpUtrNnjslGX1yVIaZ6KkDSJci4+FpbHAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4MLdNuBC9CSgTkbzeE4muSMOFQozSQxDPZJvr4BXARGWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Git Checkout)
+[8mha:////4KCMmGhlFGT/wAjNujn7oMGIuYyZRYdcG47+5qjVj/PFAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] git
+using credential github
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kratika10rathore/WebApp-pipeline.git # timeout=10
+Fetching upstream changes from https://github.com/kratika10rathore/WebApp-pipeline.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/kratika10rathore/WebApp-pipeline.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision eb28fd43a3000c24ec7eb68f71326bbb0e6c8c0d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f eb28fd43a3000c24ec7eb68f71326bbb0e6c8c0d # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master eb28fd43a3000c24ec7eb68f71326bbb0e6c8c0d # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 19c014f020c236ca23bf4c3e57bcde37c0ace57b # timeout=10
+[8mha:////4KPZEy0hmK+NNmhMtcGPFiToNikSagq8pmGAcf8fSb06AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4NnfKPgSmehq5RQTMYhseqv7Qjw7FmvsaaMLwKq332MEAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4MQUkgm4HCsmCkcbbaswH9d1cWSWg8XzRX6jgy05LrqiAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4GaBrdKOweEdswxiOWoXLWSWhyyiXvDBTi5s2Tpsa0SnAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (Code Build & Test)
+[8mha:////4K0tN2+iP0bViXwqAW5oCblmY0h/twkuHcKRrU2CY/TaAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] tool
+[8mha:////4FDusaMA2g5Rf0FpTaJ60XVpClkJcKd8Xzy9gadTVJB8AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs35DNwLL4AAAA=[0m[Pipeline] sh
++ /home/rathore_kratika109/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.kratika:WebApp-pipeline >---------------------
+[INFO] Building WebApp-pipeline Maven Webapp 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ WebApp-pipeline ---
+[INFO] Deleting /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ WebApp-pipeline ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ WebApp-pipeline ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ WebApp-pipeline ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ WebApp-pipeline ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/test-classes
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (jacoco-initialize) @ WebApp-pipeline ---
+[INFO] argLine set to -javaagent:/home/rathore_kratika109/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/coverage-reports/jacoco-unit.exec,append=true,excludes=*MethodAccess,output=file
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ WebApp-pipeline ---
+[INFO] Surefire report directory: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.TestSubject
+Welcome to Science world
+Hello! Welcome to Maths world..
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.001 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ WebApp-pipeline ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [WebApp-pipeline] in [/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/WebApp-pipeline]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/main/webapp]
+[INFO] Webapp assembled in [87 msecs]
+[INFO] Building war: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/WebApp-pipeline.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.743 s
+[INFO] Finished at: 2020-08-06T10:35:26Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4KZkIUQXNvND5gBaroIkEDdj3KydvVdFXzb3V1l1Qu72AAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaJm7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+ATnVfPq+AAAA[0m[Pipeline] }
+[8mha:////4NgAc+gZqqil/NA4f++lJk23v647DBFwq6n1M8gZPGybAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICBRWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bgo2J0a+AAAA[0m[Pipeline] // stage
+[8mha:////4PfrGyOTmGzsOazCU/PpeaF1iH1LVLDL6C/a3VaEYCQ+AAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJESDqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKDa7z7F8A6sHc4fBAAAA[0m[Pipeline] stage
+[8mha:////4LwvPX/HpxwoeiNuh9eElarmUyPnNYtOPwJ+uRSXEAkSAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (SonarQube Analysis)
+[8mha:////4D6JAnq62kngPa/k4D+t5S9MO4n/w+dVfkpV8xchOS/EAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNxXfVKy+AAAA[0m[Pipeline] tool
+[8mha:////4Epk7xFbaltm+uFknd32OR3yAOjiNwqSKEU5Yx2SyYsgAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTAghpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+822BnCAAAA[0m[Pipeline] withSonarQubeEnv
+Injecting SonarQube environment variables using the configuration: sonarqube-6.4
+[8mha:////4JEMjonSVYpfqgUHbdFai01hxbdJwcFzoqmQkbGakzhXAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] {
+[8mha:////4IXtLWyaLdy/V7Fj+G1NWeG6wodAGkXGFdvyLLz2yweCAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQo99tP7cIbaOP4NL4AAAA=[0m[Pipeline] sh
++ /home/rathore_kratika109/.jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/bin/sonar-scanner -Dsonar.host.url=http:35.247.184.143:9000 -Dsonar.login=2ce4e6ef2d679007972d722311f12adfb10564a5 -Dsonar.projectVersion=1.0.0 -Dsonar.projectKey=WebAppKey -Dsonar.language=java -Dsonar.junit.reportsPath=target/surefire-reports/TEST-com.TestSubject.xml -Dsonar.jacoco.reportPath=target/coverage-reports/jacoco-unit.exec -Dsonar.sources=src
+INFO: Scanner configuration file: /home/rathore_kratika109/.jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/sonar-project.properties
+INFO: SonarScanner 4.3.0.2102
+INFO: Java 1.8.0_265 Private Build (64-bit)
+INFO: Linux 4.15.0-1080-gcp amd64
+INFO: User cache: /home/rathore_kratika109/.sonar/cache
+INFO: Scanner configuration file: /home/rathore_kratika109/.jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/sonar-project.properties
+INFO: Analyzing on SonarQube server 6.4.0
+INFO: Default locale: "en_US", source code encoding: "UTF-8"
+INFO: Load global settings
+INFO: Load global settings (done) | time=535ms
+INFO: User cache: /home/rathore_kratika109/.sonar/cache
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=205ms
+INFO: Process project properties
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=323ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=221ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=2796ms
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=370ms
+INFO: Publish mode
+INFO: Project key: WebAppKey
+INFO: -------------  Scan WebApp
+INFO: Load server rules
+INFO: Load server rules (done) | time=727ms
+INFO: Language is forced to java
+INFO: Initializer GenericCoverageSensor
+INFO: Initializer GenericCoverageSensor (done) | time=0ms
+INFO: Base dir: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp
+INFO: Working dir: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/.scannerwork
+INFO: Source paths: src
+INFO: Source encoding: UTF-8, default locale: en_US
+INFO: Index files
+WARN: File '/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/main/webapp/WEB-INF/web.xml' is ignored because it doesn't belong to the forced language 'java'
+WARN: File '/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/main/webapp/index.jsp' is ignored because it doesn't belong to the forced language 'java'
+INFO: 2 files indexed
+INFO: Quality profile for java: Sonar way
+INFO: Sensor JavaSquidSensor [java]
+INFO: Configured Java source version (sonar.java.source): none
+INFO: JavaClasspath initialization
+WARN: Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+INFO: JavaClasspath initialization (done) | time=35ms
+INFO: JavaTestClasspath initialization
+INFO: JavaTestClasspath initialization (done) | time=0ms
+INFO: Java Main Files AST scan
+INFO: 2 source files to be analyzed
+INFO: 2/2 source files have been analyzed
+INFO: Java Main Files AST scan (done) | time=1525ms
+INFO: Java Test Files AST scan
+INFO: 0 source files to be analyzed
+INFO: Java Test Files AST scan (done) | time=3ms
+INFO: Sensor JavaSquidSensor [java] (done) | time=3105ms
+INFO: Sensor SurefireSensor [java]
+INFO: parsing /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/surefire-reports/TEST-com.TestSubject.xml
+ERROR: Reports path not found or is not a directory: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/surefire-reports/TEST-com.TestSubject.xml
+INFO: Sensor SurefireSensor [java] (done) | time=2ms
+INFO: Sensor JaCoCoSensor [java]
+WARN: Property 'sonar.jacoco.reportPath' is deprecated. Please use 'sonar.jacoco.reportPaths' instead.
+INFO: 0/0 source files have been analyzed
+INFO: Analysing /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/coverage-reports/jacoco-unit.exec
+INFO: No information about coverage per test.
+INFO: Sensor JaCoCoSensor [java] (done) | time=234ms
+INFO: Sensor SonarJavaXmlFileSensor [java]
+INFO: Sensor SonarJavaXmlFileSensor [java] (done) | time=0ms
+INFO: Sensor Analyzer for "php.ini" files [php]
+INFO: Sensor Analyzer for "php.ini" files [php] (done) | time=7ms
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=40ms
+INFO: Sensor CPD Block Indexer
+INFO: Sensor CPD Block Indexer (done) | time=55ms
+INFO: 1 file had no CPD blocks
+INFO: Calculating CPD for 1 file
+INFO: CPD calculation finished
+INFO: Analysis report generated in 205ms, dir size=25 KB
+INFO: Analysis reports compressed in 21ms, zip size=9 KB
+INFO: Analysis report uploaded in 421ms
+INFO: ANALYSIS SUCCESSFUL, you can browse http://35.247.184.143:9000/dashboard/index/WebAppKey
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://35.247.184.143:9000/api/ce/task?id=AXPDV0d31XcUN__kfzI9
+INFO: Task total time: 12.762 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 16.568s
+INFO: Final Memory: 10M/109M
+INFO: ------------------------------------------------------------------------
+[8mha:////4FwotbTONdioHz0zt51enQPJ7ribvjFAXyBura1H2UMYAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKC0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJu8TlHX9qf0b7E/nQb4AAAA=[0m[Pipeline] }
+[8mha:////4EXtmAxTVUKpwk48WnSTCGX+8n3H62MJXReAr6q9Is2MAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AEud0rYvgAAAA==[0m[Pipeline] // withSonarQubeEnv
+[8mha:////4LCaLhLQiU1MOIhdTS7KfVOnTIoi2g5JNP7bjhHjwuqGAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAkWr3Ir4AAAA=[0m[Pipeline] }
+[8mha:////4B7rq4Pl+2LKYlwdbCjTxeW8XtJjC40mirFmrBnnci4nAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+iiayevgAAAA==[0m[Pipeline] // stage
+[8mha:////4FdYEd8HfvNHK82lOdR6lRtlGcIZ9EflNFxj3m3JQNTqAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjIUSDqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKDa7z7F8AzYdm7bBAAAA[0m[Pipeline] stage
+[8mha:////4B/flKZC1VShEgujpptSNiRM2ZrnvioLYt8lgT1GqdmgAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Junit Report Publish)
+[8mha:////4L15INC6ubMZDyuEfyc05RsibykSLGgGoEvuKuE1+m1eAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0YCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGvZp0gvgAAAA==[0m[Pipeline] junit
+Recording test results
+[8mha:////4C+9wxB3H/kAqdEQ6Ai0R5P7l2wk1c3erFHqtwYdYTC6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0SCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQGMKkS1vgAAAA==[0m[Pipeline] }
+[8mha:////4KRBcP9wl7Y4RfPmJmNWvs8V1DQee88hnut2SRmOm/qmAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9mQDtDvgAAAA==[0m[Pipeline] // stage
+[8mha:////4NR6zcdeMP9HKKO6Ro+CUON5pw2BXddORMNaYHiJwsfiAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjBB2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INOibpDcEAAAA=[0m[Pipeline] stage
+[8mha:////4Er8d6FN7fSY/6YKvRiEKNMDkExyhC0ezL13O9MvvDvJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] { (Docker Build Image)
+[8mha:////4JW0ci+slBt7qN6ryaIJSir/Z3nu6izM2dYFkcbo37geAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikRJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3favo5XL4AAAA=[0m[Pipeline] tool
+[8mha:////4NhLtLMJVC4/uGRwKYy6cjiJ+n7B7C26tSVKhIBP4kVjAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyt32U/vwBq1seBO+AAAA[0m[Pipeline] sh
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+eb36325dfdab        kratika1/spr:1.1    "java -jar springa..."   43 seconds ago      Up 43 seconds       0.0.0.0:8086->8087/tcp   admiring_mayer
+[8mha:////4MBsY/05KE5B7so95UjosdesU+GwbDa/5DtHcBCuX8xqAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO62n9qHN+xdYwq+AAAA[0m[Pipeline] sh
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker --version
+Docker version 17.05.0-ce, build 89658be
+[8mha:////4N/4+v6Tgpt0xQrrZtCXt6o0hyc/aajeEGte7Msf+h4/AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK3/dQ+vAEvDk4hvgAAAA==[0m[Pipeline] sh
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker build -t kratika1/devops:1.3 .
+Sending build context to Docker daemon  287.7kB
+Step 1/5 : FROM tomcat:8.0
+ ---> ef6a7c98d192
+Step 2/5 : EXPOSE 9999
+ ---> Using cache
+ ---> 652dbcff0600
+Step 3/5 : ARG WAR_FILE=target/*.war
+ ---> Using cache
+ ---> 0707f253db25
+Step 4/5 : COPY ${WAR_FILE} /usr/local/tomcat/webapps/
+ ---> 1b00e0888971
+Step 5/5 : MAINTAINER rathore_kratika109
+ ---> Running in 84ddaa4271b5
+Removing intermediate container 84ddaa4271b5
+ ---> 73799a82f501
+Successfully built 73799a82f501
+Successfully tagged kratika1/devops:1.3
+[8mha:////4AQp4nItRlF/YSpPt7RrdgRr2B6Inguf2r4kh42W+8cnAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQUGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGGhUhAvgAAAA==[0m[Pipeline] }
+[8mha:////4BOKOVHXPpyToLgdhtz3Xzw08rOvzpvcznEpEtGoDSkFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRIOEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgHpZhcovgAAAA==[0m[Pipeline] // stage
+[8mha:////4MQwoGT0DEPL5nX4f2Is9+SC+k0wPcLYProzAjNVzM+EAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTQIMQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvV6S64cEAAAA=[0m[Pipeline] stage
+[8mha:////4OXfTvSznr8YTx7Hc7vgUSU34jyknnQ7Qrq7fqIi23AjAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] { (Docker Pushing Image to DockerHub)
+[8mha:////4PMfcDHID/TnKTs/aJcQnj4ij78mYwEoZKlReYhI+7L9AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBl2WGva+AAAA[0m[Pipeline] tool
+[8mha:////4CZEh+IU1AnjWHRfVdU6rMQ51W7m3A7+eM19AfXuM5wkAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUITbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxARiLv5DCAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $username or $password
+[8mha:////4I/mZgSPGCyStVyAIaQI/HuxGjr0YErtUvwudM3aLC6FAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAXzhjwPCAAAA[0m[Pipeline] {
+[8mha:////4EOUJtLdn40ijO2xbpPskpIBinoQ57+KLTFSlbPOjovtAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSkA5R0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3fhXiFur4AAAA=[0m[Pipeline] sh
++ /home/rathore_****09/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker login -u **** -p ****
+Login Succeeded
+[8mha:////4PwYDAra7jPXtH+wGg69diqESLr5NHNShTxv/bLYXPl6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BlK8YfC+AAAA[0m[Pipeline] }
+[8mha:////4E6pp7mjCpqNuWFJdG+BQa01uJIQ2lEDZAXUiW7vThP+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgFq/vIBvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4DVKniM9PxPIDnIqqBaDmhQeYi7U0sWgDdd98dbcCowxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCgUSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK3/dQ+vAHbMUCgvgAAAA==[0m[Pipeline] sh
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker push kratika1/devops:1.3
+The push refers to repository [docker.io/kratika1/devops]
+2b3eef9801d2: Preparing
+d0f3f4011f28: Preparing
+583dc95d65c9: Preparing
+f26731984f9b: Preparing
+9f052711b40a: Preparing
+81242e1e644e: Preparing
+39a6e47c4ae6: Preparing
+fc6174f0df4a: Preparing
+425325c72d90: Preparing
+c596d5191368: Preparing
+daf45b2cad9a: Preparing
+8c466bf4ca6f: Preparing
+81242e1e644e: Waiting
+39a6e47c4ae6: Waiting
+fc6174f0df4a: Waiting
+425325c72d90: Waiting
+c596d5191368: Waiting
+daf45b2cad9a: Waiting
+8c466bf4ca6f: Waiting
+d0f3f4011f28: Layer already exists
+f26731984f9b: Layer already exists
+583dc95d65c9: Layer already exists
+9f052711b40a: Layer already exists
+39a6e47c4ae6: Layer already exists
+81242e1e644e: Layer already exists
+fc6174f0df4a: Layer already exists
+425325c72d90: Layer already exists
+daf45b2cad9a: Layer already exists
+c596d5191368: Layer already exists
+8c466bf4ca6f: Layer already exists
+2b3eef9801d2: Pushed
+1.3: digest: sha256:fa6eddf3c86cbf032cf2d3aea77bd4a889643dc5bf5b091ed116146a7473726e size: 2833
+[8mha:////4GGAchkg7fhkuz2RA4Mmskx9NITMXIoRXz/GUsaWEOTZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCQYGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgE2/vbVvgAAAA==[0m[Pipeline] }
+[8mha:////4A9taTOQEAQ0zVR5dpjiKab+Rom4ybC3M7qAGc5OByqQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQBMhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QHwAzcovgAAAA==[0m[Pipeline] // stage
+[8mha:////4LeXrI0LyhZr0PiGEfnXZnqdPj8bsnZykItdsmfuCUM3AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRDARWiorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxJah2G0+x/INpcBlpcEAAAA=[0m[Pipeline] stage
+[8mha:////4F1ce7aLBg+H7H407wsGJ/XkZPRZ4ZLAsJClfa8K+pGlAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUBibE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAW2++SvCAAAA[0m[Pipeline] { (Docker Run Image)
+[8mha:////4KMUzJFxMEJtMc4oivmU5X01q3Gv9CmlcRW+N/eN+3lJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN4OkKLa+AAAA[0m[Pipeline] tool
+[8mha:////4AR84ZVueLTJKPeHwZEx/rq9IlZugUdccsjnwPZIOXAvAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN8KVM6++AAAA[0m[Pipeline] sh
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker run -p 8083:8080 -d kratika1/devops:1.3
+7f2ca71526a2d1b66637d15e58503cb9b030c7bc8ce6523e1b383c4a6f02f6f4
+[8mha:////4Cs+wTYWFHBOzX5ufivjmg7Sjr3vKYm9hBM1IXNdO83zAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbNy40X2q+AAAA[0m[Pipeline] }
+[8mha:////4AF4tmNZJVPKoHw8ZGt3+vRJr9nE2FzlyYl1Ma6sCMigAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCkwpR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fHdcE1r4AAAA=[0m[Pipeline] // stage
+[8mha:////4CrJ1Xar3q7+Vh6QDWBLnhiRbsJZcJIC1WUnJdnX6yvlAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYTTAA2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxIah2O4+x/INuCM8c8EAAAA=[0m[Pipeline] stage
+[8mha:////4KzLhQQ3h7GRvWJUPARM5vnbyKTIq2VMLGO1TTRqJgdIAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AgbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxATOXFRXCAAAA[0m[Pipeline] { (EC2 Configure Ansible)
+[8mha:////4On+qmUNU8AfLnFT5WVXpVbbtSbH/0fg3XqyK0+T/2hwAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIZAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNzN5Fy++AAAA[0m[Pipeline] sh
++ which ansible
+/usr/bin/ansible
+[8mha:////4JF7pN6xyY4rfrN7SOcIC1EBVJE2YwhnYu6dW6ci3h13AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIYQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN3JIDDa+AAAA[0m[Pipeline] sh
++ ansible --version
+ansible 2.9.11
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = [u'/home/rathore_kratika109/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.12 (default, Jul 21 2020, 15:19:50) [GCC 5.4.0 20160609]
+[8mha:////4M/RWenjmFYdu+1VDUFaQx/45A9Tk0Clg2Tlyfrg4/jWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCAxQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AFiTYjlvgAAAA==[0m[Pipeline] ansiblePlaybook
+[Devops-Bootcamp-WebApp] $ ansible-playbook aws-ec2-playbook.yml --private-key /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/ssh2154858227676655056.key -u ec2-user
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+PLAY [ec2-launcher] ************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [create ec2] **************************************************************
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[8mha:////4MeOXgAez/+X014ScPR6ieUllj/hYxQzprKKN2m72Ac6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCqBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw81GhnivgAAAA==[0m[Pipeline] }
+[8mha:////4AgmqQdkFPxGp/xbaRkjDSHQMES7HJb5KISmwRH8gcwJAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIZEGUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkFZ73Md6g8NWIoTvgAAAA==[0m[Pipeline] // stage
+[8mha:////4EbX04yV2hc+b07fcQj8ih7VnKqU0x15hh18cxOE5NFRAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTgGgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxW7zOZZvlqgZEsEAAAA=[0m[Pipeline] stage
+[8mha:////4BWzspCw0OFWRBeSfZpiquuPwI0gBXHx2DWgEL+U3bbEAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ALEgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD7KBoKTCAAAA[0m[Pipeline] { (Wait to EC2 instance coming up)
+[8mha:////4FTfLdD0xei8CqFxtMz1a4IMkzRPNtWxx7V201bSDRRIAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSAA2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBlmkmCe+AAAA[0m[Pipeline] sh
++ sleep 40
+[8mha:////4DSyOIzczfiwPCrdWOz33bCLKREpcbPgCIxWAqAvPfHxAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSoDSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BvQoOE2+AAAA[0m[Pipeline] }
+[8mha:////4BbjAWjYLv2moTuE+k4Znh8lJBDKa0qGLEAN4oG7iGOIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIEGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgHybgAYvgAAAA==[0m[Pipeline] // stage
+[8mha:////4OOjGY/hrcTSm5PIZFx1nuGj96RjBbKoa1g9Fpy9uYYlAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYTTIISEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFhKLa7z7F8A1VY3njBAAAA[0m[Pipeline] stage
+[8mha:////4D1epQnzu3mSLLwJo/5BM6YgwgqM+lCUvgoGu5e1gHbiAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QyDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASgVHzvCAAAA[0m[Pipeline] { (Getting Ip of EC2 Instance)
+[8mha:////4MlJ3MVT6InbzVsvyF53pwafcbXBTpqNHBlQGA3nCJliAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBUIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHrW/o6vgAAAA==[0m[Pipeline] sh
++ aws ec2 describe-instances --filter Name=tag-key,Values=Name Name=tag-value,Values=WebApp --query Reservations[*].Instances[*].PublicIpAddress[]
+[8mha:////4KL/ED5w/HYmS3nWvdCPeE6SCNScye13heD0sGLA6K+TAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGhBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw+qauEjvgAAAA==[0m[Pipeline] echo
+18.189.44.241
+[8mha:////4IZhjJSeR+hl/ZoYWZjUaHInb8Den3s5n+SqQyDOsyo6AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUYAQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wA6x1vDr4AAAA=[0m[Pipeline] }
+[8mha:////4EeNMdzsBnrnJCBu1VcDjcxq5+cIY0VmJOIhmGgIxAqEAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIAESSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wA2P40sr4AAAA=[0m[Pipeline] // stage
+[8mha:////4KLVceoaEJVKJYRCqmRBd9pmoqJFgUFlqFR+/UztAdc5AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYTTRKJAVLSWG15gYmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKUIB4pOdBZ7j6n1Ygijy01MFPtLoEl0dBYtYaJghbKTImOPCypiC0uKElYS1hbbQMmjY9jITt91HTS6+sQxb3sJpTc3eEAhs5l15C/MEbbX0STCn+evAOaBoWgYyl3zOVZvmpNrqcEAAAA=[0m[Pipeline] stage
+[8mha:////4CfyrJvLd2QCd5+qOjIZ2FiYpQwQKZZKETlLX/L+ZpJXAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ATEgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD08AFXvCAAAA[0m[Pipeline] { (Installing Docker On EC2 Instance)
+[8mha:////4Cgj6EywbT95FVqF/VJTRz58B+xurRkMBO0MdeE4ndRAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AgbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxASGtDzzCAAAA[0m[Pipeline] sshagent
+[ssh-agent] Using credentials ec2-user (aws-pem)
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-4DdDCBHlFTG7/agent.12181
+SSH_AGENT_PID=12183
+Running ssh-add (command line suppressed)
+Identity added: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_2072289224855697139.key (/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_2072289224855697139.key)
+[ssh-agent] Started.
+[8mha:////4B673/hW2q82mAGRjsQxKQHLi2YG4juyA2BxDu+a2UeMAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0owNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPhRixbsIAAAA=[0m[Pipeline] {
+[8mha:////4AlEpuWYi2KT8Y4v/4Q7E4f9Fdotuf3Ai7wbK8rjcKQFAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxhnHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs3IKq2br4AAAA=[0m[Pipeline] sh
++ ssh -o StrictHostKeyChecking=no ec2-user@18.189.44.241 sudo yum install docker -y
+Warning: Permanently added '18.189.44.241' (ECDSA) to the list of known hosts.
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package docker.x86_64 0:19.03.6ce-4.amzn2 will be installed
+--> Processing Dependency: runc >= 1.0.0 for package: docker-19.03.6ce-4.amzn2.x86_64
+--> Processing Dependency: containerd >= 1.3.2 for package: docker-19.03.6ce-4.amzn2.x86_64
+--> Processing Dependency: pigz for package: docker-19.03.6ce-4.amzn2.x86_64
+--> Processing Dependency: libcgroup for package: docker-19.03.6ce-4.amzn2.x86_64
+--> Running transaction check
+---> Package containerd.x86_64 0:1.3.2-1.amzn2 will be installed
+---> Package libcgroup.x86_64 0:0.41-21.amzn2 will be installed
+---> Package pigz.x86_64 0:2.3.4-1.amzn2.0.1 will be installed
+---> Package runc.x86_64 0:1.0.0-0.1.20200204.gitdc9208a.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package    Arch   Version                              Repository         Size
+================================================================================
+Installing:
+ docker     x86_64 19.03.6ce-4.amzn2                    amzn2extra-docker  37 M
+Installing for dependencies:
+ containerd x86_64 1.3.2-1.amzn2                        amzn2extra-docker  24 M
+ libcgroup  x86_64 0.41-21.amzn2                        amzn2-core         66 k
+ pigz       x86_64 2.3.4-1.amzn2.0.1                    amzn2-core         81 k
+ runc       x86_64 1.0.0-0.1.20200204.gitdc9208a.amzn2  amzn2extra-docker 2.6 M
+
+Transaction Summary
+================================================================================
+Install  1 Package (+4 Dependent packages)
+
+Total download size: 65 M
+Installed size: 271 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                               63 MB/s |  65 MB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : runc-1.0.0-0.1.20200204.gitdc9208a.amzn2.x86_64              1/5 
+  Installing : containerd-1.3.2-1.amzn2.x86_64                              2/5 
+  Installing : libcgroup-0.41-21.amzn2.x86_64                               3/5 
+  Installing : pigz-2.3.4-1.amzn2.0.1.x86_64                                4/5 
+  Installing : docker-19.03.6ce-4.amzn2.x86_64                              5/5 
+  Verifying  : docker-19.03.6ce-4.amzn2.x86_64                              1/5 
+  Verifying  : containerd-1.3.2-1.amzn2.x86_64                              2/5 
+  Verifying  : pigz-2.3.4-1.amzn2.0.1.x86_64                                3/5 
+  Verifying  : runc-1.0.0-0.1.20200204.gitdc9208a.amzn2.x86_64              4/5 
+  Verifying  : libcgroup-0.41-21.amzn2.x86_64                               5/5 
+
+Installed:
+  docker.x86_64 0:19.03.6ce-4.amzn2                                             
+
+Dependency Installed:
+  containerd.x86_64 0:1.3.2-1.amzn2                                             
+  libcgroup.x86_64 0:0.41-21.amzn2                                              
+  pigz.x86_64 0:2.3.4-1.amzn2.0.1                                               
+  runc.x86_64 0:1.0.0-0.1.20200204.gitdc9208a.amzn2                             
+
+Complete!
+[8mha:////4Isdk3ZbRbiGPbQbQaDtsYJJllYJMuR1xl+Zjie05ibQAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZhzHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o3bvELmr4AAAA=[0m[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 12183 killed;
+[ssh-agent] Stopped.
+[8mha:////4AqqyZ8juzPIa0lWdd2WbSvwDfEPMiColbzmxVH4kKDFAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBUgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtd+9wHZ4Es8vgAAAA==[0m[Pipeline] // sshagent
+[8mha:////4BOUZeboKpWhhEghVzU24uYAOrO8K+A9iMq/C1hqILGWAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCgQSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4TysM21330AxmIebr4AAAA=[0m[Pipeline] }
+[8mha:////4GXiSB54nsaCpnVLjK3oIIl6kQs+TDHR8IfwixXoELcQAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISSQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUh22u/e4D/iCNn74AAAA=[0m[Pipeline] // stage
+[8mha:////4F9WyqIiCxJX9CMlelJsOKFhyAJWXsO+pjLmXZEddj82AAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTQIGEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKHabz7F8A8vTJkLBAAAA[0m[Pipeline] stage
+[8mha:////4OdoDGsEUOpJg531UcRa89UruJlTqtj3z+Z8rYuGfgYhAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0gAEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfADxKa4dwgAAAA==[0m[Pipeline] { (Starting Docker On EC2 Instnace)
+[8mha:////4BozNrIloUYkYcwnV1o1HLB3JGxA/N437NP50iYMWoRIAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AQkJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfADX78n/wgAAAA==[0m[Pipeline] sshagent
+[ssh-agent] Using credentials ec2-user (aws-pem)
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-sxpu3Rvjriys/agent.12220
+SSH_AGENT_PID=12222
+Running ssh-add (command line suppressed)
+Identity added: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_1611061667325318151.key (/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_1611061667325318151.key)
+[ssh-agent] Started.
+[8mha:////4Bj3ZqEYHJH54e6bZEG4L8j0PiVR6u8089TxOki/V9YWAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AiEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD7lC07jCAAAA[0m[Pipeline] {
+[8mha:////4MvEhMzelcWKS78Qi8LnMk2BOyYenUPE9QJJT39QrJFbAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSARKiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBsroJZ2+AAAA[0m[Pipeline] sh
++ ssh -o StrictHostKeyChecking=no ec2-user@18.189.44.241 sudo service docker start
+Redirecting to /bin/systemctl start docker.service
+[8mha:////4N8IN6xKjfIsUknRP7uEnfcDSpdpUGfRCOUGkyX1HF9GAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSoUiIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/Bnt+gFe+AAAA[0m[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 12222 killed;
+[ssh-agent] Stopped.
+[8mha:////4HAp6gXVfl/KBUuwHqVR7JVR6WLQnk4F9pZnBZX2kMZxAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN2T81QW+AAAA[0m[Pipeline] // sshagent
+[8mha:////4KxQwq7P3LSHXLgQNoaKoczgJ+ZXNl5kBuHZsxaTalqNAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCQQFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrn2uw+OlqrzvgAAAA==[0m[Pipeline] }
+[8mha:////4KaMsEmE1A10i9rMDTMbRorRjt74Y5le2g3CRNiQ7SyDAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRANCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrn2uw+I0JKmvgAAAA==[0m[Pipeline] // stage
+[8mha:////4HslU8E8jnhT5LQTPiRWgy/zfCSbL9lpRdcNOax0LzXyAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjIRqEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKHabz7F8A9oLDS/BAAAA[0m[Pipeline] stage
+[8mha:////4JuNnwOr6Rl02O/OIcUQr9KE4jvGGJDDZ5iDuYP7JNANAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUggkhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD1KB9/zCAAAA[0m[Pipeline] { (Pulling Docker Image In EC2 Instnace)
+[8mha:////4BD+nlaqSXq7WeZ1TajMeRjAeCnoq755EB6FYFqBjMWcAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0gAUhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDypufCDCAAAA[0m[Pipeline] sshagent
+[ssh-agent] Using credentials ec2-user (aws-pem)
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-5RYG3re3WX3P/agent.12244
+SSH_AGENT_PID=12246
+Running ssh-add (command line suppressed)
+Identity added: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_1777409922354215506.key (/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_1777409922354215506.key)
+[ssh-agent] Started.
+[8mha:////4CyJPsqUDT6+AT19NJZ0DmwjS3j//CCqfDRFim059kPhAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0gQEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDwyoG8LCAAAA[0m[Pipeline] {
+[8mha:////4MFUq5saVjVRozDQ/RhNHmUhV8Sn6oF8XnObiULud45AAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgYQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN7+pvni+AAAA[0m[Pipeline] sh
++ ssh -o StrictHostKeyChecking=no ec2-user@18.189.44.241 sudo docker pull kratika1/devops:1.3
+1.3: Pulling from kratika1/devops
+f189db1b88b3: Pulling fs layer
+3d06cf2f1b5e: Pulling fs layer
+edd0da9e3091: Pulling fs layer
+eb7768aae14e: Pulling fs layer
+e2780f585e0f: Pulling fs layer
+e5ed720afeba: Pulling fs layer
+d9e134700cfc: Pulling fs layer
+e4804b33d02a: Pulling fs layer
+b9df0c24315e: Pulling fs layer
+49fdae8eaa20: Pulling fs layer
+1aea3d9a32e6: Pulling fs layer
+2da391763323: Pulling fs layer
+eb7768aae14e: Waiting
+e2780f585e0f: Waiting
+e5ed720afeba: Waiting
+d9e134700cfc: Waiting
+e4804b33d02a: Waiting
+b9df0c24315e: Waiting
+49fdae8eaa20: Waiting
+1aea3d9a32e6: Waiting
+2da391763323: Waiting
+edd0da9e3091: Verifying Checksum
+edd0da9e3091: Download complete
+3d06cf2f1b5e: Verifying Checksum
+3d06cf2f1b5e: Download complete
+eb7768aae14e: Verifying Checksum
+eb7768aae14e: Download complete
+e2780f585e0f: Verifying Checksum
+e2780f585e0f: Download complete
+f189db1b88b3: Verifying Checksum
+f189db1b88b3: Download complete
+d9e134700cfc: Verifying Checksum
+d9e134700cfc: Download complete
+e4804b33d02a: Verifying Checksum
+e4804b33d02a: Download complete
+b9df0c24315e: Verifying Checksum
+b9df0c24315e: Download complete
+49fdae8eaa20: Verifying Checksum
+49fdae8eaa20: Download complete
+1aea3d9a32e6: Verifying Checksum
+1aea3d9a32e6: Download complete
+2da391763323: Verifying Checksum
+2da391763323: Download complete
+e5ed720afeba: Verifying Checksum
+e5ed720afeba: Download complete
+f189db1b88b3: Pull complete
+3d06cf2f1b5e: Pull complete
+edd0da9e3091: Pull complete
+eb7768aae14e: Pull complete
+e2780f585e0f: Pull complete
+e5ed720afeba: Pull complete
+d9e134700cfc: Pull complete
+e4804b33d02a: Pull complete
+b9df0c24315e: Pull complete
+49fdae8eaa20: Pull complete
+1aea3d9a32e6: Pull complete
+2da391763323: Pull complete
+Digest: sha256:fa6eddf3c86cbf032cf2d3aea77bd4a889643dc5bf5b091ed116146a7473726e
+Status: Downloaded newer image for kratika1/devops:1.3
+docker.io/kratika1/devops:1.3
+[8mha:////4FbXR8cOU7eXAz5PahIpvtWu5WD+u4tklvIOqFZVX8jQAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIYQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN+Gns4C+AAAA[0m[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 12246 killed;
+[ssh-agent] Stopped.
+[8mha:////4JkAOqq+FL8358cmKBFSSxeqgI43XU4GOmMZQhj26y7sAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSUIAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN6Il4ga+AAAA[0m[Pipeline] // sshagent
+[8mha:////4Gs/pKhbs20+Ve1duNLIzbcRkBhKrbNNMfEpbMmlqT3dAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUEWIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BqRj2lO+AAAA[0m[Pipeline] }
+[8mha:////4GWfU1GKlFt4Y4qbSgwwAX/UnzokJ2Izg42hDEfnr1jEAAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxHQznGobDM0niCGGAOZXUwWofJEXs07mJEZK3/132ve6w2rGKCmYEVnsHcYtRODH216YqLQXz1NoqOL0ISRvBGNmRpqzWnBhtjAsiyHQsLaoPYUHVqGjezUQ5VeoS3PHJI7Sshde4cnZDKVWQX+whxgexvbSPjr/A3APAwMxa6qGPLD/gO/bXh6vwAAAA==[0m[Pipeline] // stage
+[8mha:////4F8QsqXoODspFFeJe2QwSALoLeKS1n6vjwTI3ORgpzd2AAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JUtBS8giHSHSIitZKwwuMY4wT6y7YF5KKF/E1/oAhEhVb7ay0mucLyhjgQMGKzmDvMGonBj/a1MREob94mkRHZ6EJI3kjGjM11Jrjgg2xgSVZDoWElUHtKTq0DGvZqbuqvEJbnTikbS8hd+0NHpDJZGYV+AtzgM11bCPhz/NXAPPAkO0Yinpbf57lG7+WUvTCAAAA[0m[Pipeline] stage
+[8mha:////4DBQRw1AgkidyZAV1Ede24Nro+sVSuqIxipi2ei2d5yVAAAApx+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkQRV+PE2rD4BLXUWmj+H9timXwiX813sELi5A2Xu0su3+sNpXdwIqdZr3Aw6KVho510SiySG66WIuvpwiShJ6tYq2JLnWrW2lJQsCrLoeCwUSgteYM6wJb34iEqK1BX5+DSduSQm+4OT8h4IgfhwlJmB7vb1HnCH+cvAOYxQFHv68UP32/5AeRSsaPEAAAA[0m[Pipeline] { (Running Docker Image In EC2 Instance)
+[8mha:////4NFwGboW6tgTBpEc/4+9dzUZD1B8LdAbvT9HGz8D2UvxAAAAqB+LCAAAAAAAAP9tjT0OwjAUg19bdWBl5BApPyPqxBp14QQhCSFp9F5JUtqJE3E17kBpJSY8WLYl63u9oYwBagqGOY2txSgt63xvpsQGCu3V08AcXZgkjOQ1a/TQkNKnpTaUNCzKcig4rDRKT9GiSbDmTjxE5QWa6pzCtB055Fbd4QkZn8hJhDSXMcDm1qtI+OP8BcDYJSh22/3sh++3/ACxU3MfxAAAAA==[0m[Pipeline] sshagent
+[ssh-agent] Using credentials ec2-user (aws-pem)
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-WO5oT9AbKmWn/agent.12323
+SSH_AGENT_PID=12325
+Running ssh-add (command line suppressed)
+Identity added: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_7817976592296543353.key (/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_7817976592296543353.key)
+[ssh-agent] Started.
+[8mha:////4E1/XP6tordtbMQ5uR+bJpZbw3vgSHz5Dz0/x64+KVOLAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApCDbUiTXqwglCEkLS6P+SpLQTJ+Jq3IHSSkx4sGxL1nu9oYwBagqGOY2txSgt63xvpsQGCu3V08AcXZgkjOQ1a/TQkNKnpTaUNCzKcig4rDRKT9GiSbDmTjxE5QWa6pzCtB055Fbd4QkZn8hJhDSXMcDm1qtI+OP8BcDYJSh22/3sh++3/ABmL9OZxAAAAA==[0m[Pipeline] {
+[8mha:////4J8MkV6mivlc5vsg4E5g29SyO08WdqiVPkILE69up8BiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDElQoFa2VhhcY2xg71l2wHZyKF/E1/kCUSFRssdrZZt4fWMUADQXDnMbOYpSW9X4w02KZQnfzlJmjK5OEkbxmrc4tKX1esKWkYUlRQsVhrVF6ihZNgg134ilqL9DUlxSm78ShtOoBLyj4ZE4ipBnGANv7oCLhz/NXAGOfoNrvDnMf+y8LKNqdwAAAAA==[0m[Pipeline] sh
++ ssh -o StrictHostKeyChecking=no ec2-user@18.189.44.241 sudo docker run -p 8082:8080 -d kratika1/devops:1.3
+3ef63f0dbb021584f4899e24f73b7a6ec39af2103cc1940c76d27fa759da6891
+[8mha:////4MY5ird0N8ErovAXOYFaYH/XsyVje2T0zLTy9HZGNQaYAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDEqJBqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7PkG13x3nPnwBLaxbT8AAAAA=[0m[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 12325 killed;
+[ssh-agent] Stopped.
+[8mha:////4FUuL3cl0P/pE59UaES8VxJW/nAffXAjaw38pCDgzUMBAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDoqBAqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7PkG13x3nPnwBOjJId8AAAAA=[0m[Pipeline] // sshagent
+[8mha:////4BgXXXd6b09r/7S2TBwDidoThXppt1HhgFHFxClna45uAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDVEgoFa2VhhcY2xg71l2wHZyKF/E1/kCUSFRssdrZZt4fWMUADQXDnMbOYpSW9X4w02KZQnfzlJmjK5OEkbxmrc4tKX1esKWkYUlRQsVhrVF6ihZNgg134ilqL9DUlxSm78ShtOoBLyj4ZE4ipBnGANv7oCLhz/NXAGPfJ6j2u+Pchy9Fcgf2wAAAAA==[0m[Pipeline] }
+[8mha:////4LjhzJQgc7inaWfa5vUdKXmR12NVtuYhi60FrBm5CelHAAAApB+LCAAAAAAAAP9tjTESgjAQRRcYC1tLD7FI6ThWtJk0niCGGAOZXUyCUHkir+YdZGDGyl/8+e837/2BTQxw5mCxNdQ5itph7wc7Lxw5dDfPI7Z8Rc0U2RuUZpTcmHpFycnAmiyHQsDWkPYcHdkEO9Gqpyq9IlteUpi/k4DcNQ94QSZmc1IhLTAF2N+HJjL9PH8FMPV9gqI6HJeuvksoecnAAAAA[0m[Pipeline] // stage
+[8mha:////4POdwwsp6bnKsQQcxLyXnko3CYLe+6iAAy77yxqaSkJXAAAApx+LCAAAAAAAAP9tjTEOwjAQBC+JUtBS8giHSHSIitZKwwuMY4wT6y7YF5KKF/E1/oAhEhVb7ay0mucLyhjgQMGKzmDvMGonBj/a1MREob94mkRHZ6EJI3kjGjM11Jrjgg2xgSVZDoWElUHtKTq0DGvZqbuqvEJbnTikbS8hd+0NHpDJZGYV+AtzgM11bCPhz/NXAPPAkO0Yirrefp7lG65OeZnCAAAA[0m[Pipeline] stage
+[8mha:////4PwFX9pwT7ld1WM+eEu8J4Wzs7LVaZzEsV7oc9t3P/icAAAAph+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApnRETa5SFE4QkhLTR/yVJaSdOxNW4A6GVmPBg2Zas93pDHQMcKVjWGewdRuXY4EebE5so9FdPE+vowhRhJG+YMJMgbU5rFZQMrCpKqDhsDCpP0aFNsOWdfMjGS7TNOYW8HTiUTt/hCQXP5CRDWsocYHcbdST8cf4CYB4SVG27X7z9fusPFL5hxcQAAAA=[0m[Pipeline] { (Sending Email )
+[8mha:////4PXMX4Y86AlIz2uI2nNHAHpoqwNtOALPtSGRyX7tIIWMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSj0CIqWisNLzCJMXasO3N2SCpexNf4A1YiUbHFamebeX9gExlOxEY4jYPF2FkR/GjyEhPxcPM0CUdX0RFG8lq0emqp1+cVW0oa1hQlVBK2GjtP0aJJsJNOPVXtFZr6kjh/Rwml7R/wgkJmc1KcFpgZ9vexj4Q/z18BzCFB1TTN0ofwBdzOwozAAAAA[0m[Pipeline] emailext
+Request made to compress build log
+Sending email to: kratirathore104@gmail.com
+[8mha:////4OkvLbaPAN7fqpmqy46b5A5XocC6GfBGVtOeK+Qr3KOuAAAApB+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSjiBJR0VppeIFJjLFj3ZmzQ1LxIr7GH7ASiYotVjvbzPsDm8hwIjbCaRwsxs6K4EeTl5iIh5unSTi6io4wktei1VNLvT6v2FLSsKYooZKw1dh5ihZNgp106qlqr9DUl8T5O0oobf+AFxQym5PitMDMsL+PfST8ef4KYA4hQdU0h6WbL9pGuLjAAAAA[0m[Pipeline] }
+[8mha:////4Na0vVuTKLQiEVOliPKMbzDx0iuzGHQpRbDYxuUMNdU2AAAApR+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP+IhiZtxYm26+AW11Fpo3sO2CJNf5K/5DxJInLzDzT13Oe8PbGKAMweLraHOUdQOez/YeeHIobt5HrHlK2qmyN6gNKPkxtQrSk4G1mQ5FAK2hrTn6Mgm2IlWPVXpFdnyksL8nQTkrnnACzIxm5MKaYEpwP4+NJHp5/krgKnvExRVdVz68AXCSBgKwAAAAA==[0m[Pipeline] // stage
+[8mha:////4PDQCU1oKpeTBAUM7m65O6lXZCu17hizzYV8dCVJn7RGAAAApB+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjSFAhKlorDS8wsTFOrLtgX3AqXsTX+AMRkajYameaeb1hlSIcKTrZWew9ptbLIYxufjJT7K+BsuzoIlvCRMHKxuaGjD0t2BBbWCYKKBWsLbaBkkfHsFGdfugqaHTVmePsDgoKb+7wBKHmMuvIX5gibG+jSYS/zt8ATAOD2DGUdb0fPlWe+Si+AAAA[0m[Pipeline] echo
+This will run only if the run was marked finally
+[8mha:////4IgZ7mGAA/td1UJmbzKgc8uCUeMdo5vdBy1THAq0zNRcAAAApR+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjSIgGUdFaaXiBiY1xYt0F+4JT8SK+xh+IiETFVjvTzOsNqxThSNHJzmLvMbVeDmF085OZYn8NlGVHF9kSJgpWNjY3ZOxpwYbYwjJRQKlgbbENlDw6ho3q9ENXQaOrzhxnd1BQeHOHJwg1l1lH/sIUYXsbTSL8df4GYBoGhrKu9wxi9wHkbt0MvgAAAA==[0m[Pipeline] }
+[8mha:////4A+MLZZOxjHp76VBcRM3KO6MXgQriFevYzXQSzUpGVd8AAAApR+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjiIICUdFaaXiBiY1xYt0F+4JT8SK+xh+IiETFVjvTzOsNqxThSNHJzmLvMbVeDmF085OZYn8NlGVHF9kSJgpWNjY3ZOxpwYbYwjJRQKlgbbENlDw6ho3q9ENXQaOrzhxnd1BQeHOHJwg1l1lH/sIUYXsbTSL8df4GYBoGhrKu9wxi9wH30tmvvgAAAA==[0m[Pipeline] // node
+[8mha:////4OJwQ6JZSu8uiZPVHckpzAmNuoOV+uPs2s9008YnU9KEAAAApB+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjUCEhKlorDS8wsTFOrLtgX3AqXsTX+AMRkajYameaeb1hlSIcKTrZWew9ptbLIYxufjJT7K+BsuzoIlvCRMHKxuaGjD0t2BBbWCYKKBWsLbaBkkfHsFGdfugqaHTVmePsDgoKb+7wBKHmMuvIX5gibG+jSYS/zt8ATMPAUNb1nkHsPrB1jlq+AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS
