@@ -1,0 +1,643 @@
+Started by GitHub push by kratika10rathore
+Obtained Jenkinsfile from git https://github.com/kratika10rathore/WebApp-pipeline.git
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] Start of Pipeline
+
+[Pipeline] node
+
+Running on Jenkins in /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp
+[Pipeline] {
+
+[Pipeline] stage
+
+[Pipeline] { (Git Checkout)
+
+[Pipeline] git
+
+using credential github
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kratika10rathore/WebApp-pipeline.git # timeout=10
+Fetching upstream changes from https://github.com/kratika10rathore/WebApp-pipeline.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/kratika10rathore/WebApp-pipeline.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 5d6be3aaab7c6a5c2125703debc7d71d4e78d963 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5d6be3aaab7c6a5c2125703debc7d71d4e78d963 # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master 5d6be3aaab7c6a5c2125703debc7d71d4e78d963 # timeout=10
+Commit message: "Update README.md"
+ > git rev-list --no-walk eb28fd43a3000c24ec7eb68f71326bbb0e6c8c0d # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Code Build & Test)
+
+[Pipeline] tool
+
+[Pipeline] sh
+
++ /home/rathore_kratika109/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.kratika:WebApp-pipeline >---------------------
+[INFO] Building WebApp-pipeline Maven Webapp 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ WebApp-pipeline ---
+[INFO] Deleting /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ WebApp-pipeline ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ WebApp-pipeline ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ WebApp-pipeline ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ WebApp-pipeline ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/test-classes
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (jacoco-initialize) @ WebApp-pipeline ---
+[INFO] argLine set to -javaagent:/home/rathore_kratika109/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/coverage-reports/jacoco-unit.exec,append=true,excludes=*MethodAccess,output=file
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ WebApp-pipeline ---
+[INFO] Surefire report directory: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.TestSubject
+Welcome to Science world
+Hello! Welcome to Maths world..
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.252 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ WebApp-pipeline ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [WebApp-pipeline] in [/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/WebApp-pipeline]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/main/webapp]
+[INFO] Webapp assembled in [41 msecs]
+[INFO] Building war: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/WebApp-pipeline.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.668 s
+[INFO] Finished at: 2020-08-06T11:27:49Z
+[INFO] ------------------------------------------------------------------------
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (SonarQube Analysis)
+
+[Pipeline] tool
+
+[Pipeline] withSonarQubeEnv
+
+Injecting SonarQube environment variables using the configuration: sonarqube-6.4
+[Pipeline] {
+
+[Pipeline] sh
+
++ /home/rathore_kratika109/.jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/bin/sonar-scanner -Dsonar.host.url=http:35.247.184.143:9000 -Dsonar.login=2ce4e6ef2d679007972d722311f12adfb10564a5 -Dsonar.projectVersion=1.0.0 -Dsonar.projectKey=WebAppKey -Dsonar.language=java -Dsonar.junit.reportsPath=target/surefire-reports/TEST-com.TestSubject.xml -Dsonar.jacoco.reportPath=target/coverage-reports/jacoco-unit.exec -Dsonar.sources=src
+INFO: Scanner configuration file: /home/rathore_kratika109/.jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/sonar-project.properties
+INFO: SonarScanner 4.3.0.2102
+INFO: Java 1.8.0_265 Private Build (64-bit)
+INFO: Linux 4.15.0-1080-gcp amd64
+INFO: User cache: /home/rathore_kratika109/.sonar/cache
+INFO: Scanner configuration file: /home/rathore_kratika109/.jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/sonar-project.properties
+INFO: Analyzing on SonarQube server 6.4.0
+INFO: Default locale: "en_US", source code encoding: "UTF-8"
+INFO: Load global settings
+INFO: Load global settings (done) | time=459ms
+INFO: User cache: /home/rathore_kratika109/.sonar/cache
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=201ms
+INFO: Process project properties
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=277ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=213ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=2701ms
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=307ms
+INFO: Publish mode
+INFO: Project key: WebAppKey
+INFO: -------------  Scan WebApp
+INFO: Load server rules
+INFO: Load server rules (done) | time=518ms
+INFO: Language is forced to java
+INFO: Initializer GenericCoverageSensor
+INFO: Initializer GenericCoverageSensor (done) | time=0ms
+INFO: Base dir: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp
+INFO: Working dir: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/.scannerwork
+INFO: Source paths: src
+INFO: Source encoding: UTF-8, default locale: en_US
+INFO: Index files
+WARN: File '/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/main/webapp/WEB-INF/web.xml' is ignored because it doesn't belong to the forced language 'java'
+WARN: File '/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/src/main/webapp/index.jsp' is ignored because it doesn't belong to the forced language 'java'
+INFO: 2 files indexed
+INFO: Quality profile for java: Sonar way
+INFO: Sensor JavaSquidSensor [java]
+INFO: Configured Java source version (sonar.java.source): none
+INFO: JavaClasspath initialization
+WARN: Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+INFO: JavaClasspath initialization (done) | time=15ms
+INFO: JavaTestClasspath initialization
+INFO: JavaTestClasspath initialization (done) | time=0ms
+INFO: Java Main Files AST scan
+INFO: 2 source files to be analyzed
+INFO: 2/2 source files have been analyzed
+INFO: Java Main Files AST scan (done) | time=914ms
+INFO: Java Test Files AST scan
+INFO: 0 source files to be analyzed
+INFO: Java Test Files AST scan (done) | time=1ms
+INFO: Sensor JavaSquidSensor [java] (done) | time=1776ms
+INFO: Sensor SurefireSensor [java]
+INFO: parsing /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/surefire-reports/TEST-com.TestSubject.xml
+ERROR: Reports path not found or is not a directory: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/surefire-reports/TEST-com.TestSubject.xml
+INFO: Sensor SurefireSensor [java] (done) | time=2ms
+INFO: Sensor JaCoCoSensor [java]
+WARN: Property 'sonar.jacoco.reportPath' is deprecated. Please use 'sonar.jacoco.reportPaths' instead.
+INFO: 0/0 source files have been analyzed
+INFO: Analysing /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/target/coverage-reports/jacoco-unit.exec
+INFO: No information about coverage per test.
+INFO: Sensor JaCoCoSensor [java] (done) | time=124ms
+INFO: Sensor SonarJavaXmlFileSensor [java]
+INFO: Sensor SonarJavaXmlFileSensor [java] (done) | time=0ms
+INFO: Sensor Analyzer for "php.ini" files [php]
+INFO: Sensor Analyzer for "php.ini" files [php] (done) | time=2ms
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=19ms
+INFO: Sensor CPD Block Indexer
+INFO: Sensor CPD Block Indexer (done) | time=38ms
+INFO: 1 file had no CPD blocks
+INFO: Calculating CPD for 1 file
+INFO: CPD calculation finished
+INFO: Analysis report generated in 132ms, dir size=25 KB
+INFO: Analysis reports compressed in 9ms, zip size=9 KB
+INFO: Analysis report uploaded in 403ms
+INFO: ANALYSIS SUCCESSFUL, you can browse http://35.247.184.143:9000/dashboard/index/WebAppKey
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://35.247.184.143:9000/api/ce/task?id=AXPDhyg11XcUN__kfzJB
+INFO: Task total time: 8.914 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 11.423s
+INFO: Final Memory: 10M/109M
+INFO: ------------------------------------------------------------------------
+[Pipeline] }
+[Pipeline] // withSonarQubeEnv
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Junit Report Publish)
+
+[Pipeline] junit
+
+Recording test results
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Docker Build Image)
+
+[Pipeline] tool
+
+[Pipeline] sh
+
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+70461f2a90c8        kratika1/spr:1.3    "java -jar springa..."   14 minutes ago      Up 14 minutes       0.0.0.0:8086->8087/tcp   xenodochial_napier
+[Pipeline] sh
+
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker --version
+Docker version 17.05.0-ce, build 89658be
+[Pipeline] sh
+
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker build -t kratika1/devops:1.4 .
+Sending build context to Docker daemon  293.4kB
+
+Step 1/5 : FROM tomcat:8.0
+ ---> ef6a7c98d192
+Step 2/5 : EXPOSE 9999
+ ---> Using cache
+ ---> 652dbcff0600
+Step 3/5 : ARG WAR_FILE=target/*.war
+ ---> Using cache
+ ---> 0707f253db25
+Step 4/5 : COPY ${WAR_FILE} /usr/local/tomcat/webapps/
+ ---> b5771dd45c8a
+Step 5/5 : MAINTAINER rathore_kratika109
+ ---> Running in d921c7e6b493
+Removing intermediate container d921c7e6b493
+ ---> 10ba720d41b3
+Successfully built 10ba720d41b3
+Successfully tagged kratika1/devops:1.4
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Docker Pushing Image to DockerHub)
+
+[Pipeline] tool
+
+[Pipeline] withCredentials
+
+Masking supported pattern matches of $username or $password
+[Pipeline] {
+
+[Pipeline] sh
+
++ /home/rathore_****09/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker login -u **** -p ****
+Login Succeeded
+[Pipeline] }
+[Pipeline] // withCredentials
+[Pipeline] sh
+
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker push kratika1/devops:1.4
+The push refers to repository [docker.io/kratika1/devops]
+7dcf70a6d0dc: Preparing
+d0f3f4011f28: Preparing
+583dc95d65c9: Preparing
+f26731984f9b: Preparing
+9f052711b40a: Preparing
+81242e1e644e: Preparing
+39a6e47c4ae6: Preparing
+fc6174f0df4a: Preparing
+425325c72d90: Preparing
+c596d5191368: Preparing
+daf45b2cad9a: Preparing
+8c466bf4ca6f: Preparing
+81242e1e644e: Waiting
+39a6e47c4ae6: Waiting
+fc6174f0df4a: Waiting
+425325c72d90: Waiting
+c596d5191368: Waiting
+daf45b2cad9a: Waiting
+8c466bf4ca6f: Waiting
+f26731984f9b: Layer already exists
+583dc95d65c9: Layer already exists
+9f052711b40a: Layer already exists
+d0f3f4011f28: Layer already exists
+81242e1e644e: Layer already exists
+39a6e47c4ae6: Layer already exists
+fc6174f0df4a: Layer already exists
+425325c72d90: Layer already exists
+daf45b2cad9a: Layer already exists
+c596d5191368: Layer already exists
+8c466bf4ca6f: Layer already exists
+7dcf70a6d0dc: Pushed
+1.4: digest: sha256:76fb303f7cd56fca925db82bedc432a64a0ef8951ad60ce5f10b694afcc52c78 size: 2833
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Docker Run Image)
+
+[Pipeline] tool
+
+[Pipeline] sh
+
++ /home/rathore_kratika109/.jenkins/tools/org.jenkinsci.plugins.docker.commons.tools.DockerTool/Docker/bin/docker run -p 8083:8080 -d kratika1/devops:1.4
+9b207fc4bb75517c132bcf074b97ef0478a520cb5a1e8b0ada29dcb6d1faecf5
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (EC2 Configure Ansible)
+
+[Pipeline] sh
+
++ which ansible
+/usr/bin/ansible
+[Pipeline] sh
+
++ ansible --version
+ansible 2.9.11
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = [u'/home/rathore_kratika109/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.12 (default, Jul 21 2020, 15:19:50) [GCC 5.4.0 20160609]
+[Pipeline] ansiblePlaybook
+
+[Devops-Bootcamp-WebApp] $ ansible-playbook aws-ec2-playbook.yml --private-key /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp/ssh6023274657696764190.key -u ec2-user
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+PLAY [ec2-launcher] ************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [create ec2] **************************************************************
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Wait to EC2 instance coming up)
+
+[Pipeline] sh
+
++ sleep 40
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Getting Ip of EC2 Instance)
+
+[Pipeline] sh
+
++ aws ec2 describe-instances --filter Name=tag-key,Values=Name Name=tag-value,Values=WebApp --query Reservations[*].Instances[*].PublicIpAddress[]
+[Pipeline] echo
+
+18.216.247.213
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Installing Docker On EC2 Instance)
+
+[Pipeline] sshagent
+
+[ssh-agent] Using credentials ec2-user (aws-pem)
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-mzzjg9FKKBX9/agent.15421
+SSH_AGENT_PID=15423
+Running ssh-add (command line suppressed)
+Identity added: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_3364297262239769919.key (/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_3364297262239769919.key)
+[ssh-agent] Started.
+[Pipeline] {
+
+[Pipeline] sh
+
++ ssh -o StrictHostKeyChecking=no ec2-user@18.216.247.213 sudo yum install docker -y
+Warning: Permanently added '18.216.247.213' (ECDSA) to the list of known hosts.
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package docker.x86_64 0:19.03.6ce-4.amzn2 will be installed
+--> Processing Dependency: runc >= 1.0.0 for package: docker-19.03.6ce-4.amzn2.x86_64
+--> Processing Dependency: containerd >= 1.3.2 for package: docker-19.03.6ce-4.amzn2.x86_64
+--> Processing Dependency: pigz for package: docker-19.03.6ce-4.amzn2.x86_64
+--> Processing Dependency: libcgroup for package: docker-19.03.6ce-4.amzn2.x86_64
+--> Running transaction check
+---> Package containerd.x86_64 0:1.3.2-1.amzn2 will be installed
+---> Package libcgroup.x86_64 0:0.41-21.amzn2 will be installed
+---> Package pigz.x86_64 0:2.3.4-1.amzn2.0.1 will be installed
+---> Package runc.x86_64 0:1.0.0-0.1.20200204.gitdc9208a.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package    Arch   Version                              Repository         Size
+================================================================================
+Installing:
+ docker     x86_64 19.03.6ce-4.amzn2                    amzn2extra-docker  37 M
+Installing for dependencies:
+ containerd x86_64 1.3.2-1.amzn2                        amzn2extra-docker  24 M
+ libcgroup  x86_64 0.41-21.amzn2                        amzn2-core         66 k
+ pigz       x86_64 2.3.4-1.amzn2.0.1                    amzn2-core         81 k
+ runc       x86_64 1.0.0-0.1.20200204.gitdc9208a.amzn2  amzn2extra-docker 2.6 M
+
+Transaction Summary
+================================================================================
+Install  1 Package (+4 Dependent packages)
+
+Total download size: 65 M
+Installed size: 271 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                               58 MB/s |  65 MB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : runc-1.0.0-0.1.20200204.gitdc9208a.amzn2.x86_64              1/5 
+  Installing : containerd-1.3.2-1.amzn2.x86_64                              2/5 
+  Installing : libcgroup-0.41-21.amzn2.x86_64                               3/5 
+  Installing : pigz-2.3.4-1.amzn2.0.1.x86_64                                4/5 
+  Installing : docker-19.03.6ce-4.amzn2.x86_64                              5/5 
+  Verifying  : docker-19.03.6ce-4.amzn2.x86_64                              1/5 
+  Verifying  : containerd-1.3.2-1.amzn2.x86_64                              2/5 
+  Verifying  : pigz-2.3.4-1.amzn2.0.1.x86_64                                3/5 
+  Verifying  : runc-1.0.0-0.1.20200204.gitdc9208a.amzn2.x86_64              4/5 
+  Verifying  : libcgroup-0.41-21.amzn2.x86_64                               5/5 
+
+Installed:
+  docker.x86_64 0:19.03.6ce-4.amzn2                                             
+
+Dependency Installed:
+  containerd.x86_64 0:1.3.2-1.amzn2                                             
+  libcgroup.x86_64 0:0.41-21.amzn2                                              
+  pigz.x86_64 0:2.3.4-1.amzn2.0.1                                               
+  runc.x86_64 0:1.0.0-0.1.20200204.gitdc9208a.amzn2                             
+
+Complete!
+[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 15423 killed;
+[ssh-agent] Stopped.
+[Pipeline] // sshagent
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Starting Docker On EC2 Instnace)
+
+[Pipeline] sshagent
+
+[ssh-agent] Using credentials ec2-user (aws-pem)
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-7VN0hdgPUKK3/agent.15451
+SSH_AGENT_PID=15453
+Running ssh-add (command line suppressed)
+Identity added: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_8525384270738913423.key (/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_8525384270738913423.key)
+[ssh-agent] Started.
+[Pipeline] {
+
+[Pipeline] sh
+
++ ssh -o StrictHostKeyChecking=no ec2-user@18.216.247.213 sudo service docker start
+Redirecting to /bin/systemctl start docker.service
+[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 15453 killed;
+[ssh-agent] Stopped.
+[Pipeline] // sshagent
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Pulling Docker Image In EC2 Instnace)
+
+[Pipeline] sshagent
+
+[ssh-agent] Using credentials ec2-user (aws-pem)
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-kH8IxXXebnqf/agent.15479
+SSH_AGENT_PID=15481
+Running ssh-add (command line suppressed)
+Identity added: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_8643599151169119077.key (/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_8643599151169119077.key)
+[ssh-agent] Started.
+[Pipeline] {
+
+[Pipeline] sh
+
++ ssh -o StrictHostKeyChecking=no ec2-user@18.216.247.213 sudo docker pull kratika1/devops:1.4
+1.4: Pulling from kratika1/devops
+f189db1b88b3: Pulling fs layer
+3d06cf2f1b5e: Pulling fs layer
+edd0da9e3091: Pulling fs layer
+eb7768aae14e: Pulling fs layer
+e2780f585e0f: Pulling fs layer
+e5ed720afeba: Pulling fs layer
+d9e134700cfc: Pulling fs layer
+e4804b33d02a: Pulling fs layer
+b9df0c24315e: Pulling fs layer
+49fdae8eaa20: Pulling fs layer
+1aea3d9a32e6: Pulling fs layer
+5ded6c4f7ea6: Pulling fs layer
+eb7768aae14e: Waiting
+e2780f585e0f: Waiting
+e5ed720afeba: Waiting
+d9e134700cfc: Waiting
+e4804b33d02a: Waiting
+b9df0c24315e: Waiting
+49fdae8eaa20: Waiting
+1aea3d9a32e6: Waiting
+5ded6c4f7ea6: Waiting
+edd0da9e3091: Verifying Checksum
+edd0da9e3091: Download complete
+3d06cf2f1b5e: Verifying Checksum
+3d06cf2f1b5e: Download complete
+eb7768aae14e: Verifying Checksum
+eb7768aae14e: Download complete
+e2780f585e0f: Verifying Checksum
+e2780f585e0f: Download complete
+d9e134700cfc: Verifying Checksum
+d9e134700cfc: Download complete
+f189db1b88b3: Verifying Checksum
+f189db1b88b3: Download complete
+e4804b33d02a: Verifying Checksum
+e4804b33d02a: Download complete
+b9df0c24315e: Verifying Checksum
+b9df0c24315e: Download complete
+1aea3d9a32e6: Verifying Checksum
+1aea3d9a32e6: Download complete
+49fdae8eaa20: Verifying Checksum
+49fdae8eaa20: Download complete
+5ded6c4f7ea6: Verifying Checksum
+5ded6c4f7ea6: Download complete
+e5ed720afeba: Verifying Checksum
+e5ed720afeba: Download complete
+f189db1b88b3: Pull complete
+3d06cf2f1b5e: Pull complete
+edd0da9e3091: Pull complete
+eb7768aae14e: Pull complete
+e2780f585e0f: Pull complete
+e5ed720afeba: Pull complete
+d9e134700cfc: Pull complete
+e4804b33d02a: Pull complete
+b9df0c24315e: Pull complete
+49fdae8eaa20: Pull complete
+1aea3d9a32e6: Pull complete
+5ded6c4f7ea6: Pull complete
+Digest: sha256:76fb303f7cd56fca925db82bedc432a64a0ef8951ad60ce5f10b694afcc52c78
+Status: Downloaded newer image for kratika1/devops:1.4
+docker.io/kratika1/devops:1.4
+[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 15481 killed;
+[ssh-agent] Stopped.
+[Pipeline] // sshagent
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Running Docker Image In EC2 Instance)
+
+[Pipeline] sshagent
+
+[ssh-agent] Using credentials ec2-user (aws-pem)
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-9AXMTjIXEv1t/agent.15516
+SSH_AGENT_PID=15518
+Running ssh-add (command line suppressed)
+Identity added: /home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_5429923868812739991.key (/home/rathore_kratika109/.jenkins/workspace/Devops-Bootcamp-WebApp@tmp/private_key_5429923868812739991.key)
+[ssh-agent] Started.
+[Pipeline] {
+
+[Pipeline] sh
+
++ ssh -o StrictHostKeyChecking=no ec2-user@18.216.247.213 sudo docker run -p 8082:8080 -d kratika1/devops:1.4
+75d30f649db6dcb86424f40ca5b5720a22bbfcdc4e983f79763de8d780511b91
+[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 15518 killed;
+[ssh-agent] Stopped.
+[Pipeline] // sshagent
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (Sending Email )
+
+[Pipeline] emailext
+
+Request made to compress build log
+Sending email to: kratirathore104@gmail.com
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] echo
+
+This will run only if the run was marked finally
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
