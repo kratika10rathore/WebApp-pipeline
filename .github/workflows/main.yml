@@ -20,4 +20,4 @@ jobs:
       - name: Generate the package
         run: mvn -B package --file pom.xml
       - name: Deploy to tomcat
-        run: curl -v -u admin:admin -T /home/runner/work/WebApp-pipeline/WebApp-pipeline/target/WebApp-pipeline.war 'http://ec2-184-72-174-66.compute-1.amazonaws.com:8080//manager/text/deploy?path=/web_app'
+        run: curl -v -u admin:admin -T /home/runner/work/WebApp-pipeline/WebApp-pipeline/target/WebApp-pipeline.war 'http://ec2-184-72-174-66.compute-1.amazonaws.com:8080//manager/text/deploy?path=/web1_app'
